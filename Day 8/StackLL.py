@@ -36,6 +36,17 @@ class StackLL:
         while temp != None:
             print(temp.data ,end=" -> ")
             temp=temp.next
+        print()
+        
+    def reverse(self):
+        if self.head is None:
+            print("Stack is empty")
+            return
+        temp=self.head
+        while temp != None:
+            temp=temp.next
+        for i in range(temp,-1,-1):
+            print(self.stack(i))
             
 s=StackLL()
 n=int(input("Enter the number of elements you want to push in stack :"))
