@@ -4,7 +4,7 @@ class Stack:
     def push(self,item):
         if not self.isFull():
             self.stack.append(item)
-            print(f"{item} is push an stack scuessfullt")
+            print(f"{item} is push an stack scuessfully")
         else:
             print("stack is full can not push element")
     def pop(self):
@@ -34,6 +34,15 @@ class Stack:
         else:
             print("stack is empty ")
 
+    def serach(self,key):
+        if not self.isEmpty():
+            for i in range(n-1,0):
+                if self.stack[i]==key:
+                    print("element is founnd in stack ",key)
+                    return
+                i-=1
+        else:
+            print("elements is not found ")
 s=Stack()
 n=int(input("Enter the number of elements you want to push in stack :"))
 for i in range(n):
@@ -43,3 +52,5 @@ s.display()
 s.pop()
 s.peek()
 s.display()
+key=int(input("Enter the element to search :"))
+s.serach(key)
