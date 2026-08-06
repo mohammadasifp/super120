@@ -36,13 +36,15 @@ class Stack:
 
     def serach(self,key):
         if not self.isEmpty():
-            for i in range(n-1,0):
+            n=len(self.stack)-1
+            for i in range(n,-1,-1):
                 if self.stack[i]==key:
                     print("element is founnd in stack ",key)
                     return
-                i-=1
-        else:
+                
             print("elements is not found ")
+        else:
+            print("stack is empty ")
 s=Stack()
 n=int(input("Enter the number of elements you want to push in stack :"))
 for i in range(n):
