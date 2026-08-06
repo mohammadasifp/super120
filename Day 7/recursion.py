@@ -40,6 +40,8 @@ fact1=fact(n)
 print(f"factorial of {n} is :{fact1}")
 
 '''
+# wap a python program to find fibonacci series of n numbers using recursion
+'''
 def fib(n):
     if n==0:
         return 0
@@ -51,3 +53,49 @@ def fib(n):
 n=int(input("Enter the n value :"))
 fib1=fib(n)
 print(f"fibonacci series of {n} is :{fib1}")
+'''
+# wap a python program to find power of a number using recursion
+'''
+def powerN(m,n):
+    if n==1:
+        return m
+    else:
+        return m*powerN(m,n-1)
+m=int(input("Enter the base value :"))
+n=int(input("Enter the exponetial value :"))
+power=powerN(m,n)
+print(f"base value {m} and exponetial value {n} :power is {power}")
+'''
+# wap a python program to count number of digits in a number using recursion
+'''
+def countofDigit(n):
+    if n==0:
+        return 0
+    else:
+        return 1+countofDigit(n//10)
+
+n=int(input("Enter the n value :"))
+countis=countofDigit(n)
+print(f"count of digits {n} is :{countis}")  
+'''
+
+#power set 
+a=[]
+n=int(input("Enter the n value :"))
+for i in range(n):
+    a.append(int(input("Enter the value :")))
+print("[",end="")
+for i in range(n):
+    print(a[i],end="")
+print("]")
+def subset(a,n):
+    if n==0:
+        return [[]]
+    else:
+        sub=subset(a,n-1)
+        x=a[n-1]
+        newsubset=[]
+        for i in sub:
+            newsubset.append(i)
+            newsubset.append(i+[x])
+        return newsubset
