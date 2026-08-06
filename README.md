@@ -11,7 +11,6 @@
 **A collection of programming solutions, coding exercises, and interview preparation completed during the Super120 training program.**
 
 </div>
-
 ---
 
 ## 📖 Table of Contents
