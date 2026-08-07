@@ -42,7 +42,18 @@ class Queue:
         print("Reverse all the element in a queue :")
         for i in range(len(self.queue)-1,-1,-1):
             print(self.queue[i],end = " -> ")
+        print("None")
         
+    def EvenOdd(self):
+        even=[]
+        odd=[]
+        for i in range(len(self.queue)-1):
+            if self.queue[i]%2==0:
+                even.append(self.queue[i])
+            else:
+                odd.append(self.queue[i])
+        print("Even elements in a queue are :",even)
+        print("Odd elements in a queue are :",odd)
 qq=Queue()
 n=int(input("Enter the number of n:"))
 for i in range(n):
@@ -55,3 +66,4 @@ qq.dequeue()
 qq.display()
 qq.peek()
 qq.reverse()
+qq.EvenOdd()
