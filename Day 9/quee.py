@@ -47,11 +47,11 @@ class Queue:
     def EvenOdd(self):
         even=[]
         odd=[]
-        for i in range(len(self.queue)-1):
+        for i in range(len(self.queue)):
             if self.queue[i]%2==0:
-                even.append(self.queue[i])
-            else:
                 odd.append(self.queue[i])
+            else:
+                even.append(self.queue[i])
         print("Even elements in a queue are :",even)
         print("Odd elements in a queue are :",odd)
 qq=Queue()
