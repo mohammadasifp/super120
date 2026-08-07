@@ -40,8 +40,8 @@ class Queue:
         
     def reverse(self):
         print("Reverse all the element in a queue :")
-        for i in range(0,n-1,+1):
-            print(self.queue(),end = " -> ")
+        for i in range(len(self.queue)-1,-1,-1):
+            print(self.queue[i],end = " -> ")
         
 qq=Queue()
 n=int(input("Enter the number of n:"))
