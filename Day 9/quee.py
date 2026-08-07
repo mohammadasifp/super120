@@ -28,12 +28,12 @@ class Queue:
             print("queue is Empty")
     
     def isEmpty(self):
-            if len(self.stack)==0:
+            if len(self.queue)==0:
                 return True
             else:
                 return False
     def isFull(self):
-        if len(self.stack)==5:
+        if len(self.queue)==5:
             return True
         else:
             return False
