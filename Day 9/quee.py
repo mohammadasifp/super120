@@ -38,14 +38,20 @@ class Queue:
         else:
             return False
         
+    def reverse(self):
+        print("Reverse all the element in a queue :")
+        for i in range(0,n-1,+1):
+            print(self.queue(),end = " -> ")
+        
 qq=Queue()
 n=int(input("Enter the number of n:"))
 for i in range(n):
     item = int(input("Enter the value :"))
     qq.enqueue(item)
-    print(f"{item} is add to the queue sucessfully")
+    
     
 qq.display()
 qq.dequeue()
 qq.display()
 qq.peek()
+qq.reverse()
