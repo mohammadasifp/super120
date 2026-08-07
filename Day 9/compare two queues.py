@@ -13,6 +13,7 @@ for i in range(len(queue1)):
     for j in range(len(queue2)):
         if queue1[i]==queue2[j]:
             print("Queues are Equal")
+            break
 else:
     print("Queues are not Equal")
             
