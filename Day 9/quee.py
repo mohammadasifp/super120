@@ -26,7 +26,18 @@ class Queue:
             print("queue elements are :\n",self.queue[0])
         else:
             print("queue is Empty")
-            
+    
+    def isEmpty(self):
+            if len(self.stack)==0:
+                return True
+            else:
+                return False
+    def isFull(self):
+        if len(self.stack)==5:
+            return True
+        else:
+            return False
+        
 qq=Queue()
 n=int(input("Enter the number of n:"))
 for i in range(n):
